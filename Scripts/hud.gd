@@ -9,9 +9,9 @@ const ANOMALY_INDICATOR_0 = preload("res://Assets/Textures/UI/anomaly_indicator_
 const ANOMALY_INDICATOR_1 = preload("res://Assets/Textures/UI/anomaly_indicator_1.png")
 const ANOMALY_INDICATOR_2 = preload("res://Assets/Textures/UI/anomaly_indicator_2.png")
 
-@onready var battery_texture: TextureRect = $Battery
-@onready var anomaly_count_texture: TextureRect = $AnomalyIndicator
-@onready var hour_text: Label = $Hour
+@onready var battery_texture: TextureRect = $CameraDisplay/Battery
+@onready var anomaly_count_texture: TextureRect = $CameraDisplay/AnomalyIndicator
+@onready var hour_text: Label = $CameraDisplay/Hour
 var battery: int = 3
 var left_button_hovered: bool = false
 var right_button_hovered: bool = false

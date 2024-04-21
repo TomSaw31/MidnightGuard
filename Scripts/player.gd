@@ -5,13 +5,21 @@ extends Node2D
 @onready var detection_area: Area2D = $Cursor/DetectionArea
 
 func _process(_delta):
-	if not(get_local_mouse_position().y >= 32 and get_local_mouse_position().y <= 48):
-		if not(get_local_mouse_position().x >= -8 and get_local_mouse_position().x <= 8):
+	if get_local_mouse_position().y >= 32 and get_local_mouse_position().y <= 48:
+		if get_local_mouse_position().x >= -8 and get_local_mouse_position().x <= 8:
+			pass
+		else:
 			cursor.global_position = get_global_mouse_position()
-			
+	else:
+		cursor.global_position = get_global_mouse_position()
+
 func move_player(n :int, delta: float):
 	position.x += n * delta * 100
 	position.x = clamp(position.x, -356,356)
+
+func _input(event):
+	if event.is_action_pressed("Confirm"):
+		detect_anomaly()
 
 func detect_anomaly():
 	var anomaly_found = []
