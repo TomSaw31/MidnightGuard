@@ -1,0 +1,121 @@
+[gd_scene load_steps=29 format=3 uid="uid://cklcubgq7x43l"]
+
+[ext_resource type="PackedScene" uid="uid://dr5vait8lp7if" path="res://Scenes/Furnitures/furniture.tscn" id="1_ptryf"]
+[ext_resource type="Texture2D" uid="uid://qkkypukfudi6" path="res://Assets/Textures/Office/background.png" id="1_ucu5c"]
+[ext_resource type="Texture2D" uid="uid://b1cvlqtnee8ur" path="res://Assets/Textures/Office/calendar.png" id="2_6tqh7"]
+[ext_resource type="Resource" uid="uid://dbs8pc8yu5w7m" path="res://Furnitures/calendar.tres" id="2_b2uju"]
+[ext_resource type="Resource" uid="uid://f5d34vbwclbi" path="res://Furnitures/outlet.tres" id="4_nw0c5"]
+[ext_resource type="Texture2D" uid="uid://b307xiyul7f2j" path="res://Assets/Textures/Office/outlet.png" id="4_qa4do"]
+[ext_resource type="Texture2D" uid="uid://bv4ffx82wfmuf" path="res://Assets/Textures/Office/exit_sign.png" id="6_bskus"]
+[ext_resource type="Resource" uid="uid://b5eqcodxp0ni5" path="res://Furnitures/exit_sign.tres" id="7_864ti"]
+[ext_resource type="PackedScene" uid="uid://pdjwppbi7qwn" path="res://Scenes/Player/player.tscn" id="7_d4tw8"]
+[ext_resource type="Texture2D" uid="uid://dwdnnan5wii8h" path="res://Assets/Textures/Office/thrash.png" id="8_1to12"]
+[ext_resource type="Resource" uid="uid://73aocumy2ix6" path="res://Furnitures/thrash.tres" id="9_1psgk"]
+[ext_resource type="Texture2D" uid="uid://b7n8bsucr1hvu" path="res://Assets/Textures/Office/smoking_sign.png" id="9_db1ma"]
+[ext_resource type="Texture2D" uid="uid://cqy12vba6h5ss" path="res://Assets/Textures/Office/portrait.png" id="10_2ye0p"]
+[ext_resource type="Resource" uid="uid://ct838vdi0unb1" path="res://Furnitures/smoking_sign.tres" id="10_7bcqt"]
+[ext_resource type="Resource" uid="uid://mjbmr7kykkrg" path="res://Furnitures/portrait.tres" id="11_1e1sd"]
+[ext_resource type="Texture2D" uid="uid://2mk0xliudnug" path="res://Assets/Textures/Office/fire_extinguisher.png" id="11_353h3"]
+[ext_resource type="Resource" uid="uid://c6ptairbxxah8" path="res://Furnitures/fire_extinguisher.tres" id="12_6xllt"]
+[ext_resource type="Texture2D" uid="uid://cnvacg11hh165" path="res://Assets/Textures/Office/door.png" id="12_0707e"]
+[ext_resource type="Resource" uid="uid://c2uytq8jyq2yr" path="res://Furnitures/door.tres" id="13_sws1d"]
+[ext_resource type="Texture2D" uid="uid://crc2p0ikwpnwb" path="res://Assets/Textures/Office/box.png" id="14_umlmq"]
+[ext_resource type="Resource" uid="uid://dirvms2cx1gmo" path="res://Furnitures/box.tres" id="15_omgvm"]
+[ext_resource type="Texture2D" uid="uid://b6verwhucs5pg" path="res://Assets/Textures/Office/flower_pot.png" id="15_sdcu1"]
+[ext_resource type="Resource" uid="uid://cu2esbluq3snm" path="res://Furnitures/flower_pot.tres" id="16_gsfe2"]
+[ext_resource type="Texture2D" uid="uid://dso6qg347jud6" path="res://Assets/Textures/Office/pencil_pot.png" id="17_c8pdi"]
+[ext_resource type="Texture2D" uid="uid://br630m536ltbq" path="res://Assets/Textures/Office/desk.png" id="17_i6cc4"]
+[ext_resource type="Texture2D" uid="uid://cwkipny3xtci4" path="res://Assets/Textures/Office/computer1.png" id="17_n5c8j"]
+[ext_resource type="Resource" uid="uid://bjgpwis27dsyb" path="res://Furnitures/computer1.tres" id="18_5qr0s"]
+[ext_resource type="Resource" uid="uid://dnurhh5pbm6wm" path="res://Furnitures/pencil_pot.tres" id="18_28q3c"]
+
+[node name="Office" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ucu5c")
+
+[node name="Furnitures" type="Node2D" parent="."]
+
+[node name="Calendar" parent="Furnitures" instance=ExtResource("1_ptryf")]
+z_index = 5
+position = Vector2(-344, -4)
+texture = ExtResource("2_6tqh7")
+resource = ExtResource("2_b2uju")
+
+[node name="Outlet" parent="Furnitures" instance=ExtResource("1_ptryf")]
+z_index = 5
+position = Vector2(-330, 38)
+texture = ExtResource("4_qa4do")
+resource = ExtResource("4_nw0c5")
+
+[node name="ExitSign" parent="Furnitures" instance=ExtResource("1_ptryf")]
+z_index = 5
+position = Vector2(-396, -48)
+texture = ExtResource("6_bskus")
+resource = ExtResource("7_864ti")
+
+[node name="SmokingSign" parent="Furnitures" instance=ExtResource("1_ptryf")]
+z_index = 5
+position = Vector2(-182, -46)
+texture = ExtResource("9_db1ma")
+resource = ExtResource("10_7bcqt")
+
+[node name="FireExtinguisher" parent="Furnitures" instance=ExtResource("1_ptryf")]
+z_index = 5
+position = Vector2(-221, 35)
+texture = ExtResource("11_353h3")
+resource = ExtResource("12_6xllt")
+
+[node name="Thrash" parent="Furnitures" instance=ExtResource("1_ptryf")]
+z_index = 5
+position = Vector2(-330, 60)
+texture = ExtResource("8_1to12")
+resource = ExtResource("9_1psgk")
+
+[node name="Portrait" parent="Furnitures" instance=ExtResource("1_ptryf")]
+z_index = 5
+position = Vector2(-306, -36)
+texture = ExtResource("10_2ye0p")
+resource = ExtResource("11_1e1sd")
+
+[node name="Door" parent="Furnitures" instance=ExtResource("1_ptryf")]
+z_index = 5
+position = Vector2(-396, 14)
+texture = ExtResource("12_0707e")
+resource = ExtResource("13_sws1d")
+
+[node name="FlowerPot" parent="Furnitures" instance=ExtResource("1_ptryf")]
+z_index = 5
+position = Vector2(-245, 9)
+texture = ExtResource("15_sdcu1")
+resource = ExtResource("16_gsfe2")
+
+[node name="Computer1" parent="Furnitures" instance=ExtResource("1_ptryf")]
+z_index = 5
+position = Vector2(-266, 6)
+texture = ExtResource("17_n5c8j")
+resource = ExtResource("18_5qr0s")
+
+[node name="Box" parent="Furnitures" instance=ExtResource("1_ptryf")]
+z_index = 5
+position = Vector2(-354, 52)
+texture = ExtResource("14_umlmq")
+resource = ExtResource("15_omgvm")
+
+[node name="PencilPot" parent="Furnitures" instance=ExtResource("1_ptryf")]
+z_index = 5
+position = Vector2(-288, 19)
+texture = ExtResource("17_c8pdi")
+resource = ExtResource("18_28q3c")
+
+[node name="StaticFurnitures" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticFurnitures"]
+position = Vector2(-274, 43)
+texture = ExtResource("17_i6cc4")
+
+[node name="Player" parent="." instance=ExtResource("7_d4tw8")]
+position = Vector2(-357, 4)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.752941, 0.752941, 0.752941, 1)

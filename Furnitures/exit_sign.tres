@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="FurnitureResource" load_steps=4 format=3 uid="uid://b5eqcodxp0ni5"]
+
+[ext_resource type="Script" path="res://Scripts/furniture_resource.gd" id="1_uc32f"]
+[ext_resource type="Texture2D" uid="uid://1yakt70df8o3" path="res://Assets/Textures/Office/exit_sign_1.png" id="2_bg71p"]
+[ext_resource type="Texture2D" uid="uid://c8cavb5b7of30" path="res://Assets/Textures/Office/exit_sign_2.png" id="3_dc4ln"]
+
+[resource]
+script = ExtResource("1_uc32f")
+size = 1.0
+disappear = true
+change = true
+number_changes = 2
+texture_1 = ExtResource("2_bg71p")
+texture_2 = ExtResource("3_dc4ln")
+movement = false
+movement_position = Vector2(0, 0)

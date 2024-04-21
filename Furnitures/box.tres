@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="FurnitureResource" load_steps=3 format=3 uid="uid://dirvms2cx1gmo"]
+
+[ext_resource type="Script" path="res://Scripts/furniture_resource.gd" id="1_qt6qf"]
+[ext_resource type="Texture2D" uid="uid://djepksv4eiyl2" path="res://Assets/Textures/Office/box_1.png" id="2_l56eb"]
+
+[resource]
+script = ExtResource("1_qt6qf")
+size = 2.0
+disappear = true
+change = true
+number_changes = 1
+texture_1 = ExtResource("2_l56eb")
+movement = false
+movement_position = Vector2(0, 0)
