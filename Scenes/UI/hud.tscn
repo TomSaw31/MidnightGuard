@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://br2epcjgcbx56"]
+[gd_scene load_steps=12 format=3 uid="uid://br2epcjgcbx56"]
 
 [ext_resource type="Script" path="res://Scripts/hud.gd" id="1_8f88l"]
 [ext_resource type="Shader" path="res://Materials/vhs_effect.gdshader" id="1_87dfx"]
@@ -6,7 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://bvou5ejadxdym" path="res://Assets/Textures/UI/rec.png" id="2_dstve"]
 [ext_resource type="Texture2D" uid="uid://bbaptwixcnhug" path="res://Assets/Textures/UI/battery3.png" id="4_q0jmh"]
 [ext_resource type="Texture2D" uid="uid://vh1nrm4r01ql" path="res://Assets/Textures/UI/arrow.png" id="5_ghdov"]
+[ext_resource type="Texture2D" uid="uid://xem5b6n8etl7" path="res://Assets/Textures/UI/anomaly_indicator_0.png" id="5_hwkry"]
 [ext_resource type="Texture2D" uid="uid://dlt152c3myokx" path="res://Assets/Textures/UI/pause_button.png" id="6_hs223"]
+[ext_resource type="Texture2D" uid="uid://cjojlcm1mvip0" path="res://Assets/Textures/UI/confirm_button.png" id="6_ug60t"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_bv3ba"]
 font_size = 32
@@ -82,9 +84,9 @@ texture = ExtResource("2_0fyd0")
 [node name="REC" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(48, 20)
 layout_mode = 0
-offset_left = 74.0
+offset_left = 88.0
 offset_top = 38.0
-offset_right = 122.0
+offset_right = 136.0
 offset_bottom = 58.0
 texture = ExtResource("2_dstve")
 
@@ -96,6 +98,14 @@ offset_right = 626.0
 offset_bottom = 128.0
 texture = ExtResource("4_q0jmh")
 
+[node name="AnomalyIndicator" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 568.0
+offset_top = 288.0
+offset_right = 608.0
+offset_bottom = 328.0
+texture = ExtResource("5_hwkry")
+
 [node name="Hour" type="Label" parent="."]
 layout_mode = 0
 offset_left = 32.0
@@ -105,12 +115,25 @@ offset_bottom = 336.0
 text = "00:00"
 label_settings = SubResource("LabelSettings_bv3ba")
 
+[node name="ConfirmButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 272.0
+offset_right = 352.0
+offset_bottom = 336.0
+focus_mode = 0
+icon = ExtResource("6_ug60t")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
 [node name="ButtonRight" type="Button" parent="."]
 layout_mode = 0
 offset_left = 576.0
 offset_top = 144.0
 offset_right = 640.0
 offset_bottom = 208.0
+focus_mode = 0
 icon = ExtResource("5_ghdov")
 flat = true
 icon_alignment = 1
@@ -123,6 +146,7 @@ offset_top = 208.0
 offset_right = 128.0
 offset_bottom = 272.0
 rotation = 3.14159
+focus_mode = 0
 icon = ExtResource("5_ghdov")
 flat = true
 icon_alignment = 1
@@ -132,14 +156,14 @@ expand_icon = true
 layout_mode = 0
 offset_left = 32.0
 offset_top = 32.0
-offset_right = 64.0
-offset_bottom = 64.0
+offset_right = 80.0
+offset_bottom = 80.0
 icon = ExtResource("6_hs223")
 flat = true
 icon_alignment = 1
 expand_icon = true
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="VHSEffect" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_8l8qr")
 layout_mode = 1
 anchors_preset = 15
@@ -149,9 +173,11 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[connection signal="mouse_entered" from="ButtonRight" to="." method="_on_button_right_mouse_entered"]
-[connection signal="mouse_exited" from="ButtonRight" to="." method="_on_button_right_mouse_exited"]
-[connection signal="mouse_entered" from="ButtonLeft" to="." method="_on_button_left_mouse_entered"]
-[connection signal="mouse_exited" from="ButtonLeft" to="." method="_on_button_left_mouse_exited"]
+[connection signal="button_down" from="ConfirmButton" to="." method="_on_confirm_button_button_down"]
+[connection signal="button_down" from="ButtonRight" to="." method="_on_button_right_button_down"]
+[connection signal="button_up" from="ButtonRight" to="." method="_on_button_right_button_up"]
+[connection signal="button_down" from="ButtonLeft" to="." method="_on_button_left_button_down"]
+[connection signal="button_up" from="ButtonLeft" to="." method="_on_button_left_button_up"]
 [connection signal="mouse_entered" from="PauseButton" to="." method="_on_button_right_mouse_entered"]
 [connection signal="mouse_exited" from="PauseButton" to="." method="_on_button_right_mouse_exited"]
+[connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]

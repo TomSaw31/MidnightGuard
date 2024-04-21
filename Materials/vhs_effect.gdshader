@@ -131,9 +131,9 @@ void fragment()
 		text.a = 1.0;
 	}
 	
-	float r = text.r;
+	float r = text.r/1.5;
 	float g = text.g;
-	float b = text.b;
+	float b = text.b/1.5;
 	
 	uv = warp(UV);
 	

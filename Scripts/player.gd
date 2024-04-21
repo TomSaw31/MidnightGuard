@@ -1,14 +1,24 @@
 extends Node2D
 
 @onready var cursor = $Cursor
+@onready var hud = $CanvasLayer/HUD
+@onready var detection_area: Area2D = $Cursor/DetectionArea
 
-func _input(event):
-	if event.is_action_pressed("ui_down"):
-		GAME.add_anomaly()
-
-func _physics_process(_delta):
-	cursor.global_position = get_global_mouse_position()
-
-func move_player(n :int):
-	position.x += n
+func _process(_delta):
+	if not(get_local_mouse_position().y >= 32 and get_local_mouse_position().y <= 48):
+		if not(get_local_mouse_position().x >= -8 and get_local_mouse_position().x <= 8):
+			cursor.global_position = get_global_mouse_position()
+			
+func move_player(n :int, delta: float):
+	position.x += n * delta * 100
 	position.x = clamp(position.x, -356,356)
+
+func detect_anomaly():
+	var anomaly_found = []
+	for elem in detection_area.get_overlapping_areas():
+		anomaly_found.append(elem)
+	if len(anomaly_found) == 0:
+		hud.decrease_battery()
+	else:
+		for anomaly in anomaly_found:
+			anomaly.owner.reset()

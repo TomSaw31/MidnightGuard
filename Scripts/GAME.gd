@@ -7,6 +7,11 @@ var furnitures = []
 var anomaly_spawned: bool = false
 var timer: Timer
 
+
+func anomal_removed(furniture):
+	amount_anomalies -= 1
+	furnitures.append(furniture)
+
 func _ready():
 	furnitures = get_tree().get_nodes_in_group("anomaly")
 	max_anomalies = len(furnitures)
@@ -16,7 +21,7 @@ func add_anomaly():
 	if len(furnitures) > 0:
 		var anomaly = furnitures.pick_random()
 		furnitures.erase(anomaly)
-		print(len(furnitures))
+		amount_anomalies += 1
 		anomaly.anomaly()
 
 func _process(_delta):

@@ -115,7 +115,4 @@ position = Vector2(-274, 43)
 texture = ExtResource("17_i6cc4")
 
 [node name="Player" parent="." instance=ExtResource("7_d4tw8")]
-position = Vector2(-357, 4)
-
-[node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color(0.752941, 0.752941, 0.752941, 1)
+position = Vector2(-341, 4)
