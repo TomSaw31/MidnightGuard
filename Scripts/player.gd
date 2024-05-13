@@ -1,5 +1,6 @@
 extends Node2D
 
+var speed: int = 150
 @onready var cursor = $Cursor
 @onready var hud = $CanvasLayer/HUD
 @onready var detection_area: Area2D = $Cursor/DetectionArea
@@ -14,7 +15,7 @@ func _process(_delta):
 		cursor.global_position = get_global_mouse_position()
 
 func move_player(n :int, delta: float):
-	position.x += n * delta * 100
+	position.x += n * delta * speed
 	position.x = clamp(position.x, -356,356)
 
 func _input(event):

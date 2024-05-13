@@ -1,112 +1,108 @@
-[gd_scene load_steps=29 format=3 uid="uid://cklcubgq7x43l"]
+[gd_scene load_steps=89 format=3 uid="uid://cklcubgq7x43l"]
 
 [ext_resource type="PackedScene" uid="uid://dr5vait8lp7if" path="res://Scenes/Furnitures/furniture.tscn" id="1_ptryf"]
 [ext_resource type="Texture2D" uid="uid://qkkypukfudi6" path="res://Assets/Textures/Office/background.png" id="1_ucu5c"]
 [ext_resource type="Texture2D" uid="uid://b1cvlqtnee8ur" path="res://Assets/Textures/Office/calendar.png" id="2_6tqh7"]
-[ext_resource type="Resource" uid="uid://dbs8pc8yu5w7m" path="res://Furnitures/calendar.tres" id="2_b2uju"]
-[ext_resource type="Resource" uid="uid://f5d34vbwclbi" path="res://Furnitures/outlet.tres" id="4_nw0c5"]
+[ext_resource type="Texture2D" uid="uid://djepksv4eiyl2" path="res://Assets/Textures/Office/box_1.png" id="4_ekqxb"]
 [ext_resource type="Texture2D" uid="uid://b307xiyul7f2j" path="res://Assets/Textures/Office/outlet.png" id="4_qa4do"]
+[ext_resource type="Texture2D" uid="uid://cyvbebynvb27q" path="res://Assets/Textures/Office/table.png" id="5_15mq1"]
+[ext_resource type="Texture2D" uid="uid://3imei4q0rwgc" path="res://Assets/Textures/Office/carnivorous_plant.png" id="5_g2f18"]
+[ext_resource type="Texture2D" uid="uid://e48d3flpecgb" path="res://Assets/Textures/Office/calendar_1.png" id="6_56dnp"]
 [ext_resource type="Texture2D" uid="uid://bv4ffx82wfmuf" path="res://Assets/Textures/Office/exit_sign.png" id="6_bskus"]
-[ext_resource type="Resource" uid="uid://b5eqcodxp0ni5" path="res://Furnitures/exit_sign.tres" id="7_864ti"]
+[ext_resource type="Texture2D" uid="uid://d3qnwrig6882x" path="res://Assets/Textures/Office/chair.png" id="7_ayvd5"]
 [ext_resource type="PackedScene" uid="uid://pdjwppbi7qwn" path="res://Scenes/Player/player.tscn" id="7_d4tw8"]
-[ext_resource type="Texture2D" uid="uid://dwdnnan5wii8h" path="res://Assets/Textures/Office/thrash.png" id="8_1to12"]
-[ext_resource type="Resource" uid="uid://73aocumy2ix6" path="res://Furnitures/thrash.tres" id="9_1psgk"]
+[ext_resource type="Texture2D" uid="uid://b830a7q1xs23l" path="res://Assets/Textures/Office/vent.png" id="8_5wg4m"]
+[ext_resource type="Texture2D" uid="uid://1aei4mhklxm3" path="res://Assets/Textures/Office/carnivorous_plant_1.png" id="8_8ty5r"]
+[ext_resource type="Texture2D" uid="uid://csu0hoob7wd4i" path="res://Assets/Textures/Office/carnivorous_plant_2.png" id="9_5d4wb"]
 [ext_resource type="Texture2D" uid="uid://b7n8bsucr1hvu" path="res://Assets/Textures/Office/smoking_sign.png" id="9_db1ma"]
+[ext_resource type="Texture2D" uid="uid://bw6vxtjlm3gek" path="res://Assets/Textures/Office/vent_1.png" id="9_t76x6"]
 [ext_resource type="Texture2D" uid="uid://cqy12vba6h5ss" path="res://Assets/Textures/Office/portrait.png" id="10_2ye0p"]
-[ext_resource type="Resource" uid="uid://ct838vdi0unb1" path="res://Furnitures/smoking_sign.tres" id="10_7bcqt"]
-[ext_resource type="Resource" uid="uid://mjbmr7kykkrg" path="res://Furnitures/portrait.tres" id="11_1e1sd"]
+[ext_resource type="Texture2D" uid="uid://dx8g1b8s8gamr" path="res://Assets/Textures/Office/carnivorous_plant_3.png" id="10_8lw3p"]
+[ext_resource type="Texture2D" uid="uid://obmecditfu8h" path="res://Assets/Textures/Office/bin.png" id="10_psri8"]
+[ext_resource type="Texture2D" uid="uid://di3avu64ik0f" path="res://Assets/Textures/Office/water_dispencer.png" id="11_00oqv"]
+[ext_resource type="Texture2D" uid="uid://c5jgkwl6hypaf" path="res://Assets/Textures/Office/lamp.png" id="11_2qist"]
+[ext_resource type="Texture2D" uid="uid://cwdmvuq4q48lq" path="res://Assets/Textures/Office/painting.png" id="11_6rbya"]
+[ext_resource type="Texture2D" uid="uid://xfc2gnwi4slp" path="res://Assets/Textures/Office/radio.png" id="11_56vvj"]
+[ext_resource type="Texture2D" uid="uid://3yt71sh5ccv5" path="res://Assets/Textures/Office/document.png" id="11_61v8k"]
 [ext_resource type="Texture2D" uid="uid://2mk0xliudnug" path="res://Assets/Textures/Office/fire_extinguisher.png" id="11_353h3"]
-[ext_resource type="Resource" uid="uid://c6ptairbxxah8" path="res://Furnitures/fire_extinguisher.tres" id="12_6xllt"]
+[ext_resource type="Texture2D" uid="uid://pkdtv10xsnnc" path="res://Assets/Textures/Office/shelf.png" id="11_anmmq"]
+[ext_resource type="Texture2D" uid="uid://bqsy5qnlhvl65" path="res://Assets/Textures/Office/curve.png" id="11_axt0a"]
+[ext_resource type="Texture2D" uid="uid://crcy82ldfr1c7" path="res://Assets/Textures/Office/deal.png" id="11_fj8af"]
+[ext_resource type="Texture2D" uid="uid://bi1n87xh7u1v" path="res://Assets/Textures/Office/space_sign.png" id="11_i66bk"]
+[ext_resource type="Texture2D" uid="uid://beys7j2c7xxwt" path="res://Assets/Textures/Office/cup.png" id="11_l6kg0"]
+[ext_resource type="Texture2D" uid="uid://blntkrqno33w1" path="res://Assets/Textures/Office/window.png" id="11_n1lew"]
+[ext_resource type="Texture2D" uid="uid://dwdnnan5wii8h" path="res://Assets/Textures/Office/waste.png" id="11_owjvp"]
+[ext_resource type="Texture2D" uid="uid://b8haqrjfmjkea" path="res://Assets/Textures/Office/plant.png" id="11_pf2xq"]
+[ext_resource type="Texture2D" uid="uid://d1tvbq73ppfkw" path="res://Assets/Textures/Office/star.png" id="11_pyo1r"]
+[ext_resource type="Texture2D" uid="uid://cu8qhd7r1gwl" path="res://Assets/Textures/Office/cupboard.png" id="11_q0sms"]
+[ext_resource type="Texture2D" uid="uid://c2sy0jsrhvakg" path="res://Assets/Textures/Office/notes.png" id="11_qfe5k"]
+[ext_resource type="Texture2D" uid="uid://d2dbp4w0stppn" path="res://Assets/Textures/Office/graph.png" id="11_sfusk"]
+[ext_resource type="Texture2D" uid="uid://coo6qtssyk20o" path="res://Assets/Textures/Office/flower_pot_1.png" id="12_4lha0"]
+[ext_resource type="Texture2D" uid="uid://dm7fjo3ks4oit" path="res://Assets/Textures/Office/document_1.png" id="12_4nx81"]
+[ext_resource type="Texture2D" uid="uid://uobcljrj74cm" path="res://Assets/Textures/Office/water_dispencer_1.png" id="12_8iws7"]
+[ext_resource type="Texture2D" uid="uid://by752y2ylj6rc" path="res://Assets/Textures/Office/pencil_pot_1.png" id="12_12axf"]
+[ext_resource type="Texture2D" uid="uid://1yakt70df8o3" path="res://Assets/Textures/Office/exit_sign_1.png" id="12_36oqa"]
 [ext_resource type="Texture2D" uid="uid://cnvacg11hh165" path="res://Assets/Textures/Office/door.png" id="12_0707e"]
-[ext_resource type="Resource" uid="uid://c2uytq8jyq2yr" path="res://Furnitures/door.tres" id="13_sws1d"]
+[ext_resource type="Texture2D" uid="uid://cmadmvh6t3ou8" path="res://Assets/Textures/Office/curve_1.png" id="12_750f6"]
+[ext_resource type="Texture2D" uid="uid://b0ltdc6nnkeh4" path="res://Assets/Textures/Office/graph_1.png" id="12_amux8"]
+[ext_resource type="Texture2D" uid="uid://dkhd56bf163hb" path="res://Assets/Textures/Office/cup_1.png" id="12_ap13w"]
+[ext_resource type="Texture2D" uid="uid://7ipo1u7borb8" path="res://Assets/Textures/Office/lamp_1.png" id="12_c1eak"]
+[ext_resource type="Texture2D" uid="uid://c45u63jj1fb1e" path="res://Assets/Textures/Office/plant_1.png" id="12_c6jhq"]
+[ext_resource type="Texture2D" uid="uid://p8jhim461aeg" path="res://Assets/Textures/Office/window_1.png" id="12_fpwyd"]
+[ext_resource type="Texture2D" uid="uid://b25h6gjw7mljv" path="res://Assets/Textures/Office/fire_extinguisher_1.png" id="12_g1jt6"]
+[ext_resource type="Texture2D" uid="uid://dhl8o7ng8vmfv" path="res://Assets/Textures/Office/painting_1.png" id="12_hm4y1"]
+[ext_resource type="Texture2D" uid="uid://7xnf18lecemy" path="res://Assets/Textures/Office/cupboard_1.png" id="12_j2ibd"]
+[ext_resource type="Texture2D" uid="uid://c61mblw6cysrm" path="res://Assets/Textures/Office/portrait_1.png" id="12_jns25"]
+[ext_resource type="Texture2D" uid="uid://2tlh3p7erg7w" path="res://Assets/Textures/Office/computer1_1.png" id="12_kylha"]
+[ext_resource type="Texture2D" uid="uid://dp6law66gtgu2" path="res://Assets/Textures/Office/radio_1.png" id="12_ohwbx"]
+[ext_resource type="Texture2D" uid="uid://qs4r1glg5rol" path="res://Assets/Textures/Office/door_1.png" id="12_overd"]
+[ext_resource type="Texture2D" uid="uid://7md1kq3k157o" path="res://Assets/Textures/Office/smoking_sign_1.png" id="12_p4ja6"]
+[ext_resource type="Texture2D" uid="uid://c55mqkts4mgyp" path="res://Assets/Textures/Office/space_sign_1.png" id="12_uqxt2"]
+[ext_resource type="Texture2D" uid="uid://3ctv2tsgcq4w" path="res://Assets/Textures/Office/shelf_1.png" id="12_vxoqc"]
+[ext_resource type="Texture2D" uid="uid://bkr4dmqwbvvir" path="res://Assets/Textures/Office/window_2.png" id="13_7vxgv"]
+[ext_resource type="Texture2D" uid="uid://h2ik8k2ouxrk" path="res://Assets/Textures/Office/plant_2.png" id="13_33o8n"]
+[ext_resource type="Texture2D" uid="uid://co21u0j0mnvi7" path="res://Assets/Textures/Office/shelf_2.png" id="13_b2ibe"]
+[ext_resource type="Texture2D" uid="uid://bon641d5l85t6" path="res://Assets/Textures/Office/cupboard_2.png" id="13_evjqy"]
+[ext_resource type="Texture2D" uid="uid://gsiiy1uw77j7" path="res://Assets/Textures/Office/computer1_2.png" id="13_gt8c7"]
+[ext_resource type="Texture2D" uid="uid://vtfseitl0umt" path="res://Assets/Textures/Office/water_dispencer_2.png" id="13_h5r6j"]
+[ext_resource type="Texture2D" uid="uid://c8cavb5b7of30" path="res://Assets/Textures/Office/exit_sign_2.png" id="13_o2i1v"]
+[ext_resource type="Texture2D" uid="uid://ig25bpqedk8g" path="res://Assets/Textures/Office/smoking_sign_2.png" id="13_slabu"]
+[ext_resource type="Texture2D" uid="uid://e4f0whbqm0u5" path="res://Assets/Textures/Office/space_sign_2.png" id="13_y84vd"]
+[ext_resource type="Texture2D" uid="uid://cq5m00bivtey3" path="res://Assets/Textures/Office/drawers.png" id="13_ykjvq"]
+[ext_resource type="Texture2D" uid="uid://cx5kavkj3ubb4" path="res://Assets/Textures/Office/shelf_3.png" id="14_8eloj"]
+[ext_resource type="Texture2D" uid="uid://cxu1eukmxs3fg" path="res://Assets/Textures/Office/space_sign_3.png" id="14_e31vb"]
+[ext_resource type="Texture2D" uid="uid://0gggjxyympqo" path="res://Assets/Textures/Office/computer1_3.png" id="14_fw8un"]
+[ext_resource type="Texture2D" uid="uid://bh2pd548rrutr" path="res://Assets/Textures/Office/cupboard_3.png" id="14_jdkv2"]
+[ext_resource type="Texture2D" uid="uid://dnhwt05jq8kwe" path="res://Assets/Textures/Office/drawers_1.png" id="14_r8wpk"]
 [ext_resource type="Texture2D" uid="uid://crc2p0ikwpnwb" path="res://Assets/Textures/Office/box.png" id="14_umlmq"]
-[ext_resource type="Resource" uid="uid://dirvms2cx1gmo" path="res://Furnitures/box.tres" id="15_omgvm"]
+[ext_resource type="Texture2D" uid="uid://31fb52bk5a8v" path="res://Assets/Textures/Office/water_dispencer_3.png" id="14_y2iqp"]
 [ext_resource type="Texture2D" uid="uid://b6verwhucs5pg" path="res://Assets/Textures/Office/flower_pot.png" id="15_sdcu1"]
-[ext_resource type="Resource" uid="uid://cu2esbluq3snm" path="res://Furnitures/flower_pot.tres" id="16_gsfe2"]
+[ext_resource type="Texture2D" uid="uid://cmdp5m44lmn2j" path="res://Assets/Textures/Office/computer2.png" id="16_cp2ic"]
 [ext_resource type="Texture2D" uid="uid://dso6qg347jud6" path="res://Assets/Textures/Office/pencil_pot.png" id="17_c8pdi"]
+[ext_resource type="Texture2D" uid="uid://dem12jn0526q4" path="res://Assets/Textures/Office/computer2_1.png" id="17_fufnv"]
 [ext_resource type="Texture2D" uid="uid://br630m536ltbq" path="res://Assets/Textures/Office/desk.png" id="17_i6cc4"]
 [ext_resource type="Texture2D" uid="uid://cwkipny3xtci4" path="res://Assets/Textures/Office/computer1.png" id="17_n5c8j"]
-[ext_resource type="Resource" uid="uid://bjgpwis27dsyb" path="res://Furnitures/computer1.tres" id="18_5qr0s"]
-[ext_resource type="Resource" uid="uid://dnurhh5pbm6wm" path="res://Furnitures/pencil_pot.tres" id="18_28q3c"]
+[ext_resource type="Texture2D" uid="uid://2tf5nt6begcn" path="res://Assets/Textures/Office/computer2_2.png" id="18_fwl41"]
+[ext_resource type="Texture2D" uid="uid://dpax0tuy23m81" path="res://Assets/Textures/Office/coffee_machine.png" id="36_ud0us"]
+[ext_resource type="Texture2D" uid="uid://cpkuvmewy80fy" path="res://Assets/Textures/Office/white_board.png" id="81_bwy83"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i8wj7"]
+size = Vector2(20, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8iyvl"]
+size = Vector2(16, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fs6b1"]
+size = Vector2(56, 100)
 
 [node name="Office" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_ucu5c")
 
-[node name="Furnitures" type="Node2D" parent="."]
-
-[node name="Calendar" parent="Furnitures" instance=ExtResource("1_ptryf")]
-z_index = 5
-position = Vector2(-344, -4)
-texture = ExtResource("2_6tqh7")
-resource = ExtResource("2_b2uju")
-
-[node name="Outlet" parent="Furnitures" instance=ExtResource("1_ptryf")]
-z_index = 5
-position = Vector2(-330, 38)
-texture = ExtResource("4_qa4do")
-resource = ExtResource("4_nw0c5")
-
-[node name="ExitSign" parent="Furnitures" instance=ExtResource("1_ptryf")]
-z_index = 5
-position = Vector2(-396, -48)
-texture = ExtResource("6_bskus")
-resource = ExtResource("7_864ti")
-
-[node name="SmokingSign" parent="Furnitures" instance=ExtResource("1_ptryf")]
-z_index = 5
-position = Vector2(-182, -46)
-texture = ExtResource("9_db1ma")
-resource = ExtResource("10_7bcqt")
-
-[node name="FireExtinguisher" parent="Furnitures" instance=ExtResource("1_ptryf")]
-z_index = 5
-position = Vector2(-221, 35)
-texture = ExtResource("11_353h3")
-resource = ExtResource("12_6xllt")
-
-[node name="Thrash" parent="Furnitures" instance=ExtResource("1_ptryf")]
-z_index = 5
-position = Vector2(-330, 60)
-texture = ExtResource("8_1to12")
-resource = ExtResource("9_1psgk")
-
-[node name="Portrait" parent="Furnitures" instance=ExtResource("1_ptryf")]
-z_index = 5
-position = Vector2(-306, -36)
-texture = ExtResource("10_2ye0p")
-resource = ExtResource("11_1e1sd")
-
-[node name="Door" parent="Furnitures" instance=ExtResource("1_ptryf")]
-z_index = 5
-position = Vector2(-396, 14)
-texture = ExtResource("12_0707e")
-resource = ExtResource("13_sws1d")
-
-[node name="FlowerPot" parent="Furnitures" instance=ExtResource("1_ptryf")]
-z_index = 5
-position = Vector2(-245, 9)
-texture = ExtResource("15_sdcu1")
-resource = ExtResource("16_gsfe2")
-
-[node name="Computer1" parent="Furnitures" instance=ExtResource("1_ptryf")]
-z_index = 5
-position = Vector2(-266, 6)
-texture = ExtResource("17_n5c8j")
-resource = ExtResource("18_5qr0s")
-
-[node name="Box" parent="Furnitures" instance=ExtResource("1_ptryf")]
-z_index = 5
-position = Vector2(-354, 52)
-texture = ExtResource("14_umlmq")
-resource = ExtResource("15_omgvm")
-
-[node name="PencilPot" parent="Furnitures" instance=ExtResource("1_ptryf")]
-z_index = 5
-position = Vector2(-288, 19)
-texture = ExtResource("17_c8pdi")
-resource = ExtResource("18_28q3c")
+[node name="Player" parent="." instance=ExtResource("7_d4tw8")]
+visible = false
+position = Vector2(-341, 4)
 
 [node name="StaticFurnitures" type="Node2D" parent="."]
 
@@ -114,5 +110,450 @@ resource = ExtResource("18_28q3c")
 position = Vector2(-274, 43)
 texture = ExtResource("17_i6cc4")
 
-[node name="Player" parent="." instance=ExtResource("7_d4tw8")]
-position = Vector2(-341, 4)
+[node name="Sprite2D3" type="Sprite2D" parent="StaticFurnitures"]
+position = Vector2(-99, 3)
+texture = ExtResource("81_bwy83")
+
+[node name="Sprite2D2" type="Sprite2D" parent="StaticFurnitures"]
+position = Vector2(1, 43)
+texture = ExtResource("17_i6cc4")
+
+[node name="Sprite2D4" type="Sprite2D" parent="StaticFurnitures"]
+position = Vector2(86, 43)
+texture = ExtResource("17_i6cc4")
+
+[node name="Sprite2D5" type="Sprite2D" parent="StaticFurnitures"]
+position = Vector2(178, 45)
+texture = ExtResource("5_15mq1")
+
+[node name="Sprite2D6" type="Sprite2D" parent="StaticFurnitures"]
+position = Vector2(390, 45)
+texture = ExtResource("5_15mq1")
+
+[node name="Furnitures" type="Node2D" parent="."]
+
+[node name="CardboardBox" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(-423, 52)
+texture = ExtResource("14_umlmq")
+default_texture = ExtResource("14_umlmq")
+size = 1.5
+disappear = true
+texture_1 = ExtResource("4_ekqxb")
+furniture_name = "Cardboard Box"
+
+[node name="CollisionShape2D" parent="Furnitures/CardboardBox/Area2D" index="0"]
+position = Vector2(-1, 4)
+shape = SubResource("RectangleShape2D_i8wj7")
+
+[node name="Calendar" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(-329, -12)
+texture = ExtResource("2_6tqh7")
+default_texture = ExtResource("2_6tqh7")
+size = 1.25
+disappear = true
+texture_1 = ExtResource("6_56dnp")
+symetry = true
+furniture_name = "Calendar"
+
+[node name="CollisionShape2D" parent="Furnitures/Calendar/Area2D" index="0"]
+shape = SubResource("RectangleShape2D_8iyvl")
+
+[node name="Vent" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(-38, -47)
+texture = ExtResource("8_5wg4m")
+default_texture = ExtResource("8_5wg4m")
+size = 2.0
+disappear = true
+texture_1 = ExtResource("9_t76x6")
+furniture_name = "Vent"
+
+[node name="Vent2" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(325, -40)
+texture = ExtResource("8_5wg4m")
+default_texture = ExtResource("8_5wg4m")
+size = 2.0
+disappear = true
+texture_1 = ExtResource("9_t76x6")
+furniture_name = "Vent"
+
+[node name="Bin" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(-69, 56)
+texture = ExtResource("10_psri8")
+default_texture = ExtResource("10_psri8")
+disappear = true
+change = false
+furniture_name = "Bin"
+
+[node name="CarnivorousPlant" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(-21, 11)
+texture = ExtResource("5_g2f18")
+default_texture = ExtResource("5_g2f18")
+disappear = true
+number_changes = 3
+texture_1 = ExtResource("8_8ty5r")
+texture_2 = ExtResource("9_5d4wb")
+texture_3 = ExtResource("10_8lw3p")
+symetry = true
+furniture_name = "Carnivorous Plant"
+
+[node name="Window" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(389, -13)
+texture = ExtResource("11_n1lew")
+default_texture = ExtResource("11_n1lew")
+size = 3.0
+disappear = true
+number_changes = 2
+texture_1 = ExtResource("12_fpwyd")
+texture_2 = ExtResource("13_7vxgv")
+symetry = true
+furniture_name = "Window"
+
+[node name="WaterDistributor" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(-181, 27)
+texture = ExtResource("11_00oqv")
+default_texture = ExtResource("11_00oqv")
+size = 5.0
+disappear = true
+number_changes = 3
+texture_1 = ExtResource("12_8iws7")
+texture_2 = ExtResource("13_h5r6j")
+texture_3 = ExtResource("14_y2iqp")
+symetry = true
+furniture_name = "Water Dispencer"
+
+[node name="Waste" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(-120, 60)
+texture = ExtResource("11_owjvp")
+default_texture = ExtResource("11_owjvp")
+size = 0.75
+disappear = true
+change = false
+furniture_name = "Waste"
+
+[node name="Star1" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(98, -33)
+texture = ExtResource("11_pyo1r")
+default_texture = ExtResource("11_pyo1r")
+size = 0.75
+disappear = true
+change = false
+furniture_name = "Star"
+
+[node name="Star2" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(82, -37)
+texture = ExtResource("11_pyo1r")
+default_texture = ExtResource("11_pyo1r")
+size = 0.75
+disappear = true
+change = false
+furniture_name = "Star"
+
+[node name="Star3" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(88, -25)
+texture = ExtResource("11_pyo1r")
+default_texture = ExtResource("11_pyo1r")
+size = 0.75
+disappear = true
+change = false
+furniture_name = "Star"
+
+[node name="Star4" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(123, -17)
+texture = ExtResource("11_pyo1r")
+default_texture = ExtResource("11_pyo1r")
+size = 0.75
+disappear = true
+change = false
+furniture_name = "Star"
+
+[node name="Star5" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(92, -48)
+texture = ExtResource("11_pyo1r")
+default_texture = ExtResource("11_pyo1r")
+size = 0.75
+disappear = true
+change = false
+furniture_name = "Star"
+
+[node name="SpacePoster" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(130, -36)
+texture = ExtResource("11_i66bk")
+default_texture = ExtResource("11_i66bk")
+size = 3.0
+disappear = true
+number_changes = 3
+texture_1 = ExtResource("12_uqxt2")
+texture_2 = ExtResource("13_y84vd")
+texture_3 = ExtResource("14_e31vb")
+movement = true
+symetry = true
+furniture_name = "Space Poster"
+
+[node name="NoSmokingSign" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(-194, -45)
+texture = ExtResource("9_db1ma")
+default_texture = ExtResource("9_db1ma")
+disappear = true
+number_changes = 2
+texture_1 = ExtResource("12_p4ja6")
+texture_2 = ExtResource("13_slabu")
+symetry = true
+furniture_name = "No Smoking Sign"
+
+[node name="Shelf" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(-131, -43)
+texture = ExtResource("11_anmmq")
+default_texture = ExtResource("11_anmmq")
+size = 3.0
+disappear = true
+number_changes = 3
+texture_1 = ExtResource("12_vxoqc")
+texture_2 = ExtResource("13_b2ibe")
+texture_3 = ExtResource("14_8eloj")
+symetry = true
+furniture_name = "Shelf"
+
+[node name="Radio" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(157, 18)
+texture = ExtResource("11_56vvj")
+default_texture = ExtResource("11_56vvj")
+disappear = true
+texture_1 = ExtResource("12_ohwbx")
+furniture_name = "Radio"
+
+[node name="Notes" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(-130, -17)
+texture = ExtResource("11_qfe5k")
+default_texture = ExtResource("11_qfe5k")
+disappear = true
+furniture_name = "Notes"
+
+[node name="Portrait" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(-255, -36)
+texture = ExtResource("10_2ye0p")
+default_texture = ExtResource("10_2ye0p")
+size = 3.0
+disappear = true
+texture_1 = ExtResource("12_jns25")
+symetry = true
+furniture_name = "Portrait"
+
+[node name="Plant" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(290, -8)
+texture = ExtResource("11_pf2xq")
+default_texture = ExtResource("11_pf2xq")
+size = 3.0
+disappear = true
+number_changes = 2
+texture_1 = ExtResource("12_c6jhq")
+texture_2 = ExtResource("13_33o8n")
+furniture_name = "Plant"
+
+[node name="Pencils" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(80, 19)
+texture = ExtResource("17_c8pdi")
+default_texture = ExtResource("17_c8pdi")
+disappear = true
+texture_1 = ExtResource("12_12axf")
+furniture_name = "Pencils"
+
+[node name="Painting" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(199, -40)
+texture = ExtResource("11_6rbya")
+default_texture = ExtResource("11_6rbya")
+size = 2.0
+disappear = true
+texture_1 = ExtResource("12_hm4y1")
+symetry = true
+furniture_name = "Painting"
+
+[node name="Outlet" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(-329, 24)
+texture = ExtResource("4_qa4do")
+default_texture = ExtResource("4_qa4do")
+disappear = true
+change = false
+furniture_name = "Outlet"
+
+[node name="Outlet2" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(136, 37)
+texture = ExtResource("4_qa4do")
+default_texture = ExtResource("4_qa4do")
+disappear = true
+change = false
+furniture_name = "Outlet"
+
+[node name="Lamp" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(62, 9)
+texture = ExtResource("11_2qist")
+default_texture = ExtResource("11_2qist")
+size = 2.0
+disappear = true
+texture_1 = ExtResource("12_c1eak")
+symetry = true
+furniture_name = "Lamp"
+
+[node name="Graph" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(30, -36)
+texture = ExtResource("11_sfusk")
+default_texture = ExtResource("11_sfusk")
+disappear = true
+texture_1 = ExtResource("12_amux8")
+symetry = true
+furniture_name = "Graph"
+
+[node name="FlowerPot" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(-248, 9)
+texture = ExtResource("15_sdcu1")
+default_texture = ExtResource("15_sdcu1")
+size = 1.5
+disappear = true
+texture_1 = ExtResource("12_4lha0")
+furniture_name = "Flower Pot"
+
+[node name="FireExtinguisher" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(-220, 35)
+texture = ExtResource("11_353h3")
+default_texture = ExtResource("11_353h3")
+size = 2.5
+disappear = true
+texture_1 = ExtResource("12_g1jt6")
+furniture_name = "Fire Extinguisher"
+
+[node name="ExitSign" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(-380, -49)
+texture = ExtResource("6_bskus")
+default_texture = ExtResource("6_bskus")
+disappear = true
+number_changes = 2
+texture_1 = ExtResource("12_36oqa")
+texture_2 = ExtResource("13_o2i1v")
+symetry = true
+furniture_name = "Exit Sign"
+
+[node name="Door" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(-380, 14)
+texture = ExtResource("12_0707e")
+default_texture = ExtResource("12_0707e")
+size = 4.0
+disappear = true
+texture_1 = ExtResource("12_overd")
+furniture_name = "Door"
+
+[node name="CollisionShape2D" parent="Furnitures/Door/Area2D" index="0"]
+shape = SubResource("RectangleShape2D_fs6b1")
+
+[node name="Drawers" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(290, 40)
+texture = ExtResource("13_ykjvq")
+default_texture = ExtResource("13_ykjvq")
+size = 3.0
+texture_1 = ExtResource("14_r8wpk")
+furniture_name = "Drawers"
+
+[node name="Document" parent="Furnitures" instance=ExtResource("1_ptryf")]
+z_index = 1
+position = Vector2(-132, 2)
+texture = ExtResource("11_61v8k")
+default_texture = ExtResource("11_61v8k")
+disappear = true
+texture_1 = ExtResource("12_4nx81")
+furniture_name = "Document"
+
+[node name="Curve" parent="Furnitures" instance=ExtResource("1_ptryf")]
+z_index = 1
+position = Vector2(-77, -5)
+texture = ExtResource("11_axt0a")
+default_texture = ExtResource("11_axt0a")
+disappear = true
+texture_1 = ExtResource("12_750f6")
+symetry = true
+furniture_name = "Curve"
+
+[node name="Cupboard" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(232, 24)
+texture = ExtResource("11_q0sms")
+default_texture = ExtResource("11_q0sms")
+size = 4.0
+disappear = true
+number_changes = 3
+texture_1 = ExtResource("12_j2ibd")
+texture_2 = ExtResource("13_evjqy")
+texture_3 = ExtResource("14_jdkv2")
+symetry = true
+furniture_name = "Cupboard"
+
+[node name="Cup" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(177, 23)
+texture = ExtResource("11_l6kg0")
+default_texture = ExtResource("11_l6kg0")
+disappear = true
+texture_1 = ExtResource("12_ap13w")
+furniture_name = "Cup"
+
+[node name="Deal" parent="Furnitures" instance=ExtResource("1_ptryf")]
+z_index = 1
+position = Vector2(-115, 13)
+texture = ExtResource("11_fj8af")
+default_texture = ExtResource("11_fj8af")
+disappear = true
+change = false
+furniture_name = "Deal"
+
+[node name="Computer1" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(17, 6)
+texture = ExtResource("17_n5c8j")
+default_texture = ExtResource("17_n5c8j")
+size = 3.0
+disappear = true
+number_changes = 3
+texture_1 = ExtResource("12_kylha")
+texture_2 = ExtResource("13_gt8c7")
+texture_3 = ExtResource("14_fw8un")
+furniture_name = "Computer"
+
+[node name="Computer2" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(-277, 7)
+texture = ExtResource("16_cp2ic")
+default_texture = ExtResource("16_cp2ic")
+size = 3.0
+disappear = true
+number_changes = 2
+texture_1 = ExtResource("17_fufnv")
+texture_2 = ExtResource("18_fwl41")
+furniture_name = "Computer"
+
+[node name="Computer3" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(100, 6)
+texture = ExtResource("16_cp2ic")
+default_texture = ExtResource("16_cp2ic")
+size = 3.0
+disappear = true
+number_changes = 2
+texture_1 = ExtResource("17_fufnv")
+texture_2 = ExtResource("18_fwl41")
+furniture_name = "Computer"
+
+[node name="CoffeeMaker" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(194, 13)
+texture = ExtResource("36_ud0us")
+default_texture = ExtResource("36_ud0us")
+size = 2.0
+disappear = true
+change = false
+symetry = true
+furniture_name = "Coffee Machine"
+
+[node name="Chair" parent="Furnitures" instance=ExtResource("1_ptryf")]
+position = Vector2(325, 31)
+texture = ExtResource("7_ayvd5")
+default_texture = ExtResource("7_ayvd5")
+size = 3.0
+disappear = true
+change = false
+number_changes = 0
+furniture_name = "Chair"
+
+[editable path="Furnitures/CardboardBox"]
+[editable path="Furnitures/Calendar"]
+[editable path="Furnitures/Door"]

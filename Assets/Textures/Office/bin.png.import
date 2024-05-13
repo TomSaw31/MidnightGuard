@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwdnnan5wii8h"
-path="res://.godot/imported/thrash.png-3c25dc7c5c2aa0a16fea078f586d746e.ctex"
+uid="uid://obmecditfu8h"
+path="res://.godot/imported/bin.png-930fa14ff08af396e97169acc7dc9ab6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Textures/Office/thrash.png"
-dest_files=["res://.godot/imported/thrash.png-3c25dc7c5c2aa0a16fea078f586d746e.ctex"]
+source_file="res://Assets/Textures/Office/bin.png"
+dest_files=["res://.godot/imported/bin.png-930fa14ff08af396e97169acc7dc9ab6.ctex"]
 
 [params]
 
