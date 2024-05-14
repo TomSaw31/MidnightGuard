@@ -177,7 +177,6 @@ icon_alignment = 1
 expand_icon = true
 
 [node name="VHSEffect" type="ColorRect" parent="."]
-visible = false
 material = SubResource("ShaderMaterial_8l8qr")
 layout_mode = 1
 anchors_preset = 15

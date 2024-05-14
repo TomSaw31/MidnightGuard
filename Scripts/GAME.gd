@@ -1,6 +1,6 @@
 extends Node
 
-const SPAWN_RATE = 5
+const SPAWN_RATE = 7
 var amount_anomalies: int = 0
 var max_anomalies: int = 0
 var furnitures = []

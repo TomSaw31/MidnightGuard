@@ -1,4 +1,4 @@
-[gd_scene load_steps=89 format=3 uid="uid://cklcubgq7x43l"]
+[gd_scene load_steps=110 format=3 uid="uid://cklcubgq7x43l"]
 
 [ext_resource type="PackedScene" uid="uid://dr5vait8lp7if" path="res://Scenes/Furnitures/furniture.tscn" id="1_ptryf"]
 [ext_resource type="Texture2D" uid="uid://qkkypukfudi6" path="res://Assets/Textures/Office/background.png" id="1_ucu5c"]
@@ -73,7 +73,6 @@
 [ext_resource type="Texture2D" uid="uid://cxu1eukmxs3fg" path="res://Assets/Textures/Office/space_sign_3.png" id="14_e31vb"]
 [ext_resource type="Texture2D" uid="uid://0gggjxyympqo" path="res://Assets/Textures/Office/computer1_3.png" id="14_fw8un"]
 [ext_resource type="Texture2D" uid="uid://bh2pd548rrutr" path="res://Assets/Textures/Office/cupboard_3.png" id="14_jdkv2"]
-[ext_resource type="Texture2D" uid="uid://dnhwt05jq8kwe" path="res://Assets/Textures/Office/drawers_1.png" id="14_r8wpk"]
 [ext_resource type="Texture2D" uid="uid://crc2p0ikwpnwb" path="res://Assets/Textures/Office/box.png" id="14_umlmq"]
 [ext_resource type="Texture2D" uid="uid://31fb52bk5a8v" path="res://Assets/Textures/Office/water_dispencer_3.png" id="14_y2iqp"]
 [ext_resource type="Texture2D" uid="uid://b6verwhucs5pg" path="res://Assets/Textures/Office/flower_pot.png" id="15_sdcu1"]
@@ -92,8 +91,74 @@ size = Vector2(20, 16)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8iyvl"]
 size = Vector2(16, 24)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ttsbw"]
+size = Vector2(32, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iqo4f"]
+size = Vector2(32, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3g8m6"]
+size = Vector2(11, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_28h3r"]
+size = Vector2(48, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ldb1s"]
+size = Vector2(32, 74)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jf1yt"]
+size = Vector2(48, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1qwvu"]
+size = Vector2(34, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uaxo1"]
+size = Vector2(36, 36)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_clnpp"]
+size = Vector2(29, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rd7av"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ieb0b"]
+size = Vector2(10, 9)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1sffa"]
+size = Vector2(44, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nawhy"]
+size = Vector2(9, 27)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iseex"]
+size = Vector2(19, 42)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ldrpp"]
+size = Vector2(18, 11)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fs6b1"]
 size = Vector2(56, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x4mch"]
+size = Vector2(46, 43)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jpyxm"]
+size = Vector2(48, 80)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xig11"]
+size = Vector2(42, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e7x5k"]
+size = Vector2(42, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6w10w"]
+size = Vector2(42, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wi8ap"]
+size = Vector2(23, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nnu3w"]
+size = Vector2(30, 65)
 
 [node name="Office" type="Node2D"]
 
@@ -130,13 +195,16 @@ texture = ExtResource("5_15mq1")
 position = Vector2(390, 45)
 texture = ExtResource("5_15mq1")
 
+[node name="Sprite2D7" type="Sprite2D" parent="StaticFurnitures"]
+position = Vector2(289, 40)
+texture = ExtResource("13_ykjvq")
+
 [node name="Furnitures" type="Node2D" parent="."]
 
 [node name="CardboardBox" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(-423, 52)
 texture = ExtResource("14_umlmq")
 default_texture = ExtResource("14_umlmq")
-size = 1.5
 disappear = true
 texture_1 = ExtResource("4_ekqxb")
 furniture_name = "Cardboard Box"
@@ -149,7 +217,6 @@ shape = SubResource("RectangleShape2D_i8wj7")
 position = Vector2(-329, -12)
 texture = ExtResource("2_6tqh7")
 default_texture = ExtResource("2_6tqh7")
-size = 1.25
 disappear = true
 texture_1 = ExtResource("6_56dnp")
 symetry = true
@@ -162,19 +229,25 @@ shape = SubResource("RectangleShape2D_8iyvl")
 position = Vector2(-38, -47)
 texture = ExtResource("8_5wg4m")
 default_texture = ExtResource("8_5wg4m")
-size = 2.0
 disappear = true
 texture_1 = ExtResource("9_t76x6")
 furniture_name = "Vent"
+
+[node name="CollisionShape2D" parent="Furnitures/Vent/Area2D" index="0"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_ttsbw")
 
 [node name="Vent2" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(325, -40)
 texture = ExtResource("8_5wg4m")
 default_texture = ExtResource("8_5wg4m")
-size = 2.0
 disappear = true
 texture_1 = ExtResource("9_t76x6")
 furniture_name = "Vent"
+
+[node name="CollisionShape2D" parent="Furnitures/Vent2/Area2D" index="0"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_iqo4f")
 
 [node name="Bin" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(-69, 56)
@@ -196,11 +269,14 @@ texture_3 = ExtResource("10_8lw3p")
 symetry = true
 furniture_name = "Carnivorous Plant"
 
+[node name="CollisionShape2D" parent="Furnitures/CarnivorousPlant/Area2D" index="0"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_3g8m6")
+
 [node name="Window" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(389, -13)
 texture = ExtResource("11_n1lew")
 default_texture = ExtResource("11_n1lew")
-size = 3.0
 disappear = true
 number_changes = 2
 texture_1 = ExtResource("12_fpwyd")
@@ -208,11 +284,13 @@ texture_2 = ExtResource("13_7vxgv")
 symetry = true
 furniture_name = "Window"
 
+[node name="CollisionShape2D" parent="Furnitures/Window/Area2D" index="0"]
+shape = SubResource("RectangleShape2D_28h3r")
+
 [node name="WaterDistributor" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(-181, 27)
 texture = ExtResource("11_00oqv")
 default_texture = ExtResource("11_00oqv")
-size = 5.0
 disappear = true
 number_changes = 3
 texture_1 = ExtResource("12_8iws7")
@@ -221,11 +299,13 @@ texture_3 = ExtResource("14_y2iqp")
 symetry = true
 furniture_name = "Water Dispencer"
 
+[node name="CollisionShape2D" parent="Furnitures/WaterDistributor/Area2D" index="0"]
+shape = SubResource("RectangleShape2D_ldb1s")
+
 [node name="Waste" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(-120, 60)
 texture = ExtResource("11_owjvp")
 default_texture = ExtResource("11_owjvp")
-size = 0.75
 disappear = true
 change = false
 furniture_name = "Waste"
@@ -234,7 +314,6 @@ furniture_name = "Waste"
 position = Vector2(98, -33)
 texture = ExtResource("11_pyo1r")
 default_texture = ExtResource("11_pyo1r")
-size = 0.75
 disappear = true
 change = false
 furniture_name = "Star"
@@ -243,7 +322,6 @@ furniture_name = "Star"
 position = Vector2(82, -37)
 texture = ExtResource("11_pyo1r")
 default_texture = ExtResource("11_pyo1r")
-size = 0.75
 disappear = true
 change = false
 furniture_name = "Star"
@@ -252,7 +330,6 @@ furniture_name = "Star"
 position = Vector2(88, -25)
 texture = ExtResource("11_pyo1r")
 default_texture = ExtResource("11_pyo1r")
-size = 0.75
 disappear = true
 change = false
 furniture_name = "Star"
@@ -261,7 +338,6 @@ furniture_name = "Star"
 position = Vector2(123, -17)
 texture = ExtResource("11_pyo1r")
 default_texture = ExtResource("11_pyo1r")
-size = 0.75
 disappear = true
 change = false
 furniture_name = "Star"
@@ -270,7 +346,6 @@ furniture_name = "Star"
 position = Vector2(92, -48)
 texture = ExtResource("11_pyo1r")
 default_texture = ExtResource("11_pyo1r")
-size = 0.75
 disappear = true
 change = false
 furniture_name = "Star"
@@ -279,7 +354,6 @@ furniture_name = "Star"
 position = Vector2(130, -36)
 texture = ExtResource("11_i66bk")
 default_texture = ExtResource("11_i66bk")
-size = 3.0
 disappear = true
 number_changes = 3
 texture_1 = ExtResource("12_uqxt2")
@@ -288,6 +362,9 @@ texture_3 = ExtResource("14_e31vb")
 movement = true
 symetry = true
 furniture_name = "Space Poster"
+
+[node name="CollisionShape2D" parent="Furnitures/SpacePoster/Area2D" index="0"]
+shape = SubResource("RectangleShape2D_jf1yt")
 
 [node name="NoSmokingSign" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(-194, -45)
@@ -304,7 +381,6 @@ furniture_name = "No Smoking Sign"
 position = Vector2(-131, -43)
 texture = ExtResource("11_anmmq")
 default_texture = ExtResource("11_anmmq")
-size = 3.0
 disappear = true
 number_changes = 3
 texture_1 = ExtResource("12_vxoqc")
@@ -312,6 +388,9 @@ texture_2 = ExtResource("13_b2ibe")
 texture_3 = ExtResource("14_8eloj")
 symetry = true
 furniture_name = "Shelf"
+
+[node name="CollisionShape2D" parent="Furnitures/Shelf/Area2D" index="0"]
+shape = SubResource("RectangleShape2D_1qwvu")
 
 [node name="Radio" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(157, 18)
@@ -332,22 +411,27 @@ furniture_name = "Notes"
 position = Vector2(-255, -36)
 texture = ExtResource("10_2ye0p")
 default_texture = ExtResource("10_2ye0p")
-size = 3.0
 disappear = true
 texture_1 = ExtResource("12_jns25")
 symetry = true
 furniture_name = "Portrait"
 
+[node name="CollisionShape2D" parent="Furnitures/Portrait/Area2D" index="0"]
+shape = SubResource("RectangleShape2D_uaxo1")
+
 [node name="Plant" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(290, -8)
 texture = ExtResource("11_pf2xq")
 default_texture = ExtResource("11_pf2xq")
-size = 3.0
 disappear = true
 number_changes = 2
 texture_1 = ExtResource("12_c6jhq")
 texture_2 = ExtResource("13_33o8n")
 furniture_name = "Plant"
+
+[node name="CollisionShape2D" parent="Furnitures/Plant/Area2D" index="0"]
+position = Vector2(-1.5, 0)
+shape = SubResource("RectangleShape2D_clnpp")
 
 [node name="Pencils" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(80, 19)
@@ -361,11 +445,13 @@ furniture_name = "Pencils"
 position = Vector2(199, -40)
 texture = ExtResource("11_6rbya")
 default_texture = ExtResource("11_6rbya")
-size = 2.0
 disappear = true
 texture_1 = ExtResource("12_hm4y1")
 symetry = true
 furniture_name = "Painting"
+
+[node name="CollisionShape2D" parent="Furnitures/Painting/Area2D" index="0"]
+shape = SubResource("RectangleShape2D_rd7av")
 
 [node name="Outlet" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(-329, 24)
@@ -374,6 +460,10 @@ default_texture = ExtResource("4_qa4do")
 disappear = true
 change = false
 furniture_name = "Outlet"
+
+[node name="CollisionShape2D" parent="Furnitures/Outlet/Area2D" index="0"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_ieb0b")
 
 [node name="Outlet2" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(136, 37)
@@ -387,7 +477,6 @@ furniture_name = "Outlet"
 position = Vector2(62, 9)
 texture = ExtResource("11_2qist")
 default_texture = ExtResource("11_2qist")
-size = 2.0
 disappear = true
 texture_1 = ExtResource("12_c1eak")
 symetry = true
@@ -402,23 +491,32 @@ texture_1 = ExtResource("12_amux8")
 symetry = true
 furniture_name = "Graph"
 
+[node name="CollisionShape2D" parent="Furnitures/Graph/Area2D" index="0"]
+shape = SubResource("RectangleShape2D_1sffa")
+
 [node name="FlowerPot" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(-248, 9)
 texture = ExtResource("15_sdcu1")
 default_texture = ExtResource("15_sdcu1")
-size = 1.5
 disappear = true
 texture_1 = ExtResource("12_4lha0")
 furniture_name = "Flower Pot"
+
+[node name="CollisionShape2D" parent="Furnitures/FlowerPot/Area2D" index="0"]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_nawhy")
 
 [node name="FireExtinguisher" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(-220, 35)
 texture = ExtResource("11_353h3")
 default_texture = ExtResource("11_353h3")
-size = 2.5
 disappear = true
 texture_1 = ExtResource("12_g1jt6")
 furniture_name = "Fire Extinguisher"
+
+[node name="CollisionShape2D" parent="Furnitures/FireExtinguisher/Area2D" index="0"]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_iseex")
 
 [node name="ExitSign" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(-380, -49)
@@ -431,25 +529,20 @@ texture_2 = ExtResource("13_o2i1v")
 symetry = true
 furniture_name = "Exit Sign"
 
+[node name="CollisionShape2D" parent="Furnitures/ExitSign/Area2D" index="0"]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_ldrpp")
+
 [node name="Door" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(-380, 14)
 texture = ExtResource("12_0707e")
 default_texture = ExtResource("12_0707e")
-size = 4.0
 disappear = true
 texture_1 = ExtResource("12_overd")
 furniture_name = "Door"
 
 [node name="CollisionShape2D" parent="Furnitures/Door/Area2D" index="0"]
 shape = SubResource("RectangleShape2D_fs6b1")
-
-[node name="Drawers" parent="Furnitures" instance=ExtResource("1_ptryf")]
-position = Vector2(290, 40)
-texture = ExtResource("13_ykjvq")
-default_texture = ExtResource("13_ykjvq")
-size = 3.0
-texture_1 = ExtResource("14_r8wpk")
-furniture_name = "Drawers"
 
 [node name="Document" parent="Furnitures" instance=ExtResource("1_ptryf")]
 z_index = 1
@@ -470,11 +563,14 @@ texture_1 = ExtResource("12_750f6")
 symetry = true
 furniture_name = "Curve"
 
+[node name="CollisionShape2D" parent="Furnitures/Curve/Area2D" index="0"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_x4mch")
+
 [node name="Cupboard" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(232, 24)
 texture = ExtResource("11_q0sms")
 default_texture = ExtResource("11_q0sms")
-size = 4.0
 disappear = true
 number_changes = 3
 texture_1 = ExtResource("12_j2ibd")
@@ -482,6 +578,9 @@ texture_2 = ExtResource("13_evjqy")
 texture_3 = ExtResource("14_jdkv2")
 symetry = true
 furniture_name = "Cupboard"
+
+[node name="CollisionShape2D" parent="Furnitures/Cupboard/Area2D" index="0"]
+shape = SubResource("RectangleShape2D_jpyxm")
 
 [node name="Cup" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(177, 23)
@@ -504,7 +603,6 @@ furniture_name = "Deal"
 position = Vector2(17, 6)
 texture = ExtResource("17_n5c8j")
 default_texture = ExtResource("17_n5c8j")
-size = 3.0
 disappear = true
 number_changes = 3
 texture_1 = ExtResource("12_kylha")
@@ -512,48 +610,85 @@ texture_2 = ExtResource("13_gt8c7")
 texture_3 = ExtResource("14_fw8un")
 furniture_name = "Computer"
 
+[node name="CollisionShape2D" parent="Furnitures/Computer1/Area2D" index="0"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_xig11")
+
 [node name="Computer2" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(-277, 7)
 texture = ExtResource("16_cp2ic")
 default_texture = ExtResource("16_cp2ic")
-size = 3.0
 disappear = true
 number_changes = 2
 texture_1 = ExtResource("17_fufnv")
 texture_2 = ExtResource("18_fwl41")
 furniture_name = "Computer"
+
+[node name="CollisionShape2D" parent="Furnitures/Computer2/Area2D" index="0"]
+shape = SubResource("RectangleShape2D_e7x5k")
 
 [node name="Computer3" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(100, 6)
 texture = ExtResource("16_cp2ic")
 default_texture = ExtResource("16_cp2ic")
-size = 3.0
 disappear = true
 number_changes = 2
 texture_1 = ExtResource("17_fufnv")
 texture_2 = ExtResource("18_fwl41")
 furniture_name = "Computer"
 
+[node name="CollisionShape2D" parent="Furnitures/Computer3/Area2D" index="0"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_6w10w")
+
 [node name="CoffeeMaker" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(194, 13)
 texture = ExtResource("36_ud0us")
 default_texture = ExtResource("36_ud0us")
-size = 2.0
 disappear = true
 change = false
 symetry = true
 furniture_name = "Coffee Machine"
 
+[node name="CollisionShape2D" parent="Furnitures/CoffeeMaker/Area2D" index="0"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_wi8ap")
+
 [node name="Chair" parent="Furnitures" instance=ExtResource("1_ptryf")]
 position = Vector2(325, 31)
 texture = ExtResource("7_ayvd5")
 default_texture = ExtResource("7_ayvd5")
-size = 3.0
 disappear = true
 change = false
 number_changes = 0
 furniture_name = "Chair"
 
+[node name="CollisionShape2D" parent="Furnitures/Chair/Area2D" index="0"]
+position = Vector2(1, 0.5)
+shape = SubResource("RectangleShape2D_nnu3w")
+
 [editable path="Furnitures/CardboardBox"]
 [editable path="Furnitures/Calendar"]
+[editable path="Furnitures/Vent"]
+[editable path="Furnitures/Vent2"]
+[editable path="Furnitures/CarnivorousPlant"]
+[editable path="Furnitures/Window"]
+[editable path="Furnitures/WaterDistributor"]
+[editable path="Furnitures/SpacePoster"]
+[editable path="Furnitures/Shelf"]
+[editable path="Furnitures/Portrait"]
+[editable path="Furnitures/Plant"]
+[editable path="Furnitures/Painting"]
+[editable path="Furnitures/Outlet"]
+[editable path="Furnitures/Graph"]
+[editable path="Furnitures/FlowerPot"]
+[editable path="Furnitures/FireExtinguisher"]
+[editable path="Furnitures/ExitSign"]
 [editable path="Furnitures/Door"]
+[editable path="Furnitures/Curve"]
+[editable path="Furnitures/Cupboard"]
+[editable path="Furnitures/Computer1"]
+[editable path="Furnitures/Computer2"]
+[editable path="Furnitures/Computer3"]
+[editable path="Furnitures/CoffeeMaker"]
+[editable path="Furnitures/Chair"]
